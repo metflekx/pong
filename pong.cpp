@@ -1,18 +1,16 @@
-/*
-	hellooo people . unlike the previous tutorial(snake game)
-	this program is object oriented.
-	a lot of the structure is given to us by the SDL_library
-	for example the SDL_Rect is just a class which have a height
-	and width value.in this program we make classes which 
-	inherites from these classes and add a new functionality
-	to them.
-	LETS GOOOOOOOO
-*/
-
 #include<iostream>
 #include<SDL2/SDL_image.h>
 #include<SDL2/SDL.h>
-#include"pong.h"
+#include"helpers.h"
+
+//accesses global variables from helpers.o
+extern SDL_Window* window; 
+extern SDL_Renderer* renderer;
+extern int racket_speed;
+extern int ball_speed;
+extern int freeze; 
+extern int p1_score;
+extern int p2_score;
 
 //creates a class which inherits SDL_Rect public members
 class Racket:public SDL_Rect{
