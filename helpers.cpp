@@ -32,7 +32,7 @@ void close()
     SDL_DestroyWindow(window);
     //destroy renderer
     SDL_DestroyRenderer(renderer);
-    //clean up theinitialized subsystems
+    //clean up the initialized subsystems
     SDL_Quit();
 }
 

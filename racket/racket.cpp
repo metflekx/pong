@@ -17,12 +17,6 @@ void Racket::move(SDL_Event e, int player)
 				case SDLK_UP:
 					if(y > 0)
 					{
-						//this second condition x == 5 makes sure that key-up and ley-down
-						//can only move the racket on the left side of the screen (player 1's)
-						//and not the racket on the left. i'm not very proud of writing it this
-						//way but this is the big flaw of inheritance. i belive 
-						//there must be better ways around it but i just couldn't think of a better
-						//one.
 						y -= racket_speed;
 						shift_collider();
 					}

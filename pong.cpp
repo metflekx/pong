@@ -56,10 +56,7 @@ int main()
 	//=========
 	//game loop flag
 	int quit = 0;	
-	//binary(boolean) flag to freeze the game
-	//if game_over() is called freezes the game by setting this to true
-	//int *freeze = 0;//initialy false
-	//event 
+	//event handler
 	SDL_Event e;
 	//while application is running
 	while(!quit)
