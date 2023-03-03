@@ -1,23 +1,7 @@
 #pong
 
 ###compile : 
->"g++ ./ball/ball.cpp ./racket/racket.cpp pong.cpp helpers.cpp
-   -std=c++20 -lsdl2 -lsdl2_image "
-
-###file structure : 
-.
-├── MANUAL.md
-├── a.out
-├── ball
-│   ├── ball.cpp
-│   └── ball.h
-├── cmd.txt
-├── helpers.cpp
-├── helpers.h
-├── pong.cpp
-└── racket
-    ├── racket.cpp
-    └── racket.h
+>g++ ./ball/ball.cpp ./racket/racket.cpp pong.cpp helpers.cpp -std=c++20 -lsdl2 -lsdl2_image
 
 ####how to play :
 for player1 :'w' and 's' controls left racket.
